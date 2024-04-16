@@ -25,17 +25,17 @@ client.on('ready', async () => {
   const r = new Discord.RichPresence()
     .setApplicationId('1229458471666319452')
     .setType('STREAMING')
-    .setURL('https://www.youtube.com/watch?v=_7vB_RX1TOU') //Must be a youtube video link 
+    .setURL('https://www.youtube.com/watch?v=zdfacEpzDIA') //Must be a youtube video link 
     .setState('a,l')
     .setName('a,l')
     .setDetails(`/dmv [${formatTime()}]`)
     .setStartTimestamp(Date.now())
  .setAssetsLargeImage('https://cdn.discordapp.com/attachments/1096884010048819241/1229463108729438333/IMG_5011.jpg?ex=662fc5bf&is=661d50bf&hm=639e67b42ffade2833ec07098210bea08a18cfaa162dff8d10aee545c9010820&') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('') //Text when you hover the Large image
+    .setAssetsLargeText('#') //Text when you hover the Large image
     .setAssetsSmallImage('https://cdn.discordapp.com/attachments/1226636743642714205/1229485289269886986/Black.png?ex=662fda67&is=661d6567&hm=0099b6ba1307f01e4ed55668918971d2a61ec7d7b6b35aedd19af64dfbb31c03&') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('#') //Text when you hover the Small image
-    .addButton('none', 'https://www.youtube.com/watch?v=72noANFOhdA')
-    .addButton('none', 'https://www.youtube.com/watch?v=Gbqa9n1XOes');
+    .addButton('ll', 'https://www.youtube.com/watch?v=72noANFOhdA')
+    .addButton('ll', 'https://www.youtube.com/watch?v=Gbqa9n1XOes');
 
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
